@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>关注轩哥微信公众号</title>
+    <meta
+      name="description"
+      content="轩哥软件网盘，轩哥软件合集，轩哥公众号"
+    />
+    <meta name="theme-color" content="#f6f7f8" />
+    <style>
+      body {
+        background: #f6f7f8;
+        margin: 0;
+        padding: 0;
+      }
+
+      .wechatOA {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: var(--vh);
+      }
+
+      .wechat-card {
+        background: #fff;
+        max-width: 428px;
+        max-height: 569px;
+        border-radius: 16px;
+        padding: 24px 36px 20px 36px;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        align-items: center;
+      }
+
+      .qrcode {
+        width: 256px;
+        height: 256px;
+        display: flex;
+      }
+
+      .tips {
+        font-size: 14px;
+        color: #000;
+        opacity: 0.5;
+        margin-top: 8px;
+      }
+
+      .wechatOA-card {
+        width: 100%;
+        display: flex;
+        margin-top: 16px;
+        background: #f7f7f7;
+        padding: 18px;
+        border-radius: 16px;
+        align-items: center;
+      }
+
+      .wechatOA-head {
+        width: 48px;
+        height: 48px;
+        background-image: url(https://q.qlogo.cn/headimg_dl?dst_uin=211611411&spec=640);
+        border-radius: 68px;
+        background-size: contain;
+        margin-right: 16px;
+      }
+
+      .wechatOA-name {
+        font-weight: bold;
+      }
+
+      .wechatOA-description {
+        font-size: 12px;
+        color: #000;
+        opacity: 0.5;
+      }
+
+      a.help {
+        font-size: 14px;
+        color: #000;
+        opacity: 0.5;
+        text-decoration: none;
+        margin: 20px 0;
+      }
+
+      a.help:visited {
+        color: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wechatOA">
+      <div class="wechat-card">
+        <img src="https://211611411.github.io/xgwlrj/wxgzh2.jpg" class="qrcode" alt="qrcode" />
+        <div class="tips">扫描二维码或搜索名称关注公众号</div>
+        <div class="wechatOA-card">
+          <div class="wechatOA-head"></div>
+          <div class="wechatOA-info">  
+
+<head>    
+</script>  
+<title>复制按钮</title>    
+</head>    
+<body>    
+公众号：<span id="target">热忱张先生</span>
+<button class="btn" data-clipboard-action="copy" data-clipboard-target="#target" id="copy_btn">    
+    复制   
+</button>    
+</body>    
+<script>
+
+    $(document).ready(function(){      
+        var clipboard = new Clipboard('#copy_btn');    
+        clipboard.on('success', function(e) {    
+            alert("微信号复制成功",1500);
+            window.location.href='weixin://';
+            e.clearSelection();    
+            console.log(e.clearSelection);    
+        });    
+    });    
+</script>    
+
+          </div>
+        </div>
+      </div>
+    <script>
+      // 改进vh
+      const vh = window.innerHeight * 1;
+      document.documentElement.style.setProperty("--vh", `${vh}px`);
+
+      window.addEventListener("resize", () => {
+        let vh = window.innerHeight * 1;
+        document.documentElement.style.setProperty("--vh", `${vh}px`);
+      });
+    </script>
+  </body>
+</html>
